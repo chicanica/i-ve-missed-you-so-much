@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Я так соскучился</title>
+</head>
+
+<body>
+    
+    <img class="hero" src="src/img/hero.svg" alt="">
+
+    <section class="main">
+        <div class="wrapper">
+            <h1>Я так соскучился</h1>
+            <div class="frame">
+                <img src="src/img/frame.svg" alt="" class="frame-img">
+                <video  controls poster="src/img/poster.svg" >
+                    <source src="src/video/animation.mp4" type='video/mp4'>
+                </video>
+            </div>
+            <p class="description">Автор — Яковлева Вероника</p>
+        </div>
+    </section>
+    
+    <section class="history">
+        <img class="backtop" src="src/img/backtop.svg" alt="">
+        <div class="wrapper">
+            <h2>История</h2>
+            <p class="text">
+                — о всепоглащающей, как вечная тьма, тоске маленького человечка <br class="po">по своей второй половинке, <br class="c">с которой, увы, разлучила судьба. <br class="i">И только маленький лучик надежды <br class="v">в самой глубине душе героя освещает ему путь во мраке...
+            </p>
+        </div>
+        <img class="backbottom" src="src/img/backbottom.svg" alt="">
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <p class="text">
+                Анимационный ролик Яковлевой Вероники — студентки Санкт-Петербургского государственного университета промышленных технологий и дизайна — 
+                <br class="k">к отрывку кавера Дарьи Чеботаревой <br class="na">на песню «Я так соскучился» группы Порнофильмы, Санкт-Петербург 2024 год
+            </p>
+            <a href="mailto: chicanica@yandex.ru">chicanica@yandex.ru</a>
+            <a href="http://t.me/chicanica">t.me/chicanica</a>
+            <img src="src/img/heart.svg" alt="">
+        </div>
+    </footer>
+    
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAj3EaCkZMEUePHyjx-qVZmKCMGdQNxBMI",
+          authDomain: "i-ve-missed-you-so-much.firebaseapp.com",
+          projectId: "i-ve-missed-you-so-much",
+          storageBucket: "i-ve-missed-you-so-much.appspot.com",
+          messagingSenderId: "689969254540",
+          appId: "1:689969254540:web:be073810fe3c93e68c2ba9",
+          measurementId: "G-5839NTW24K"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>

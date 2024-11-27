@@ -1,0 +1,321 @@
+@font-face {
+    font-family: "Mistral";
+    src: url('src/fonts/MISTRAL.TTF');
+}
+
+/*-----------------------------------------------------------------*/
+html{
+    scroll-behavior: smooth;
+    cursor: default;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    border: 0px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #3a3a3a;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #FF2020;
+}
+
+html::-webkit-scrollbar-thumb:active {
+    background-color: #FF0000;
+}
+
+/*-----------------------------------------------------------------*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: #333333;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body, section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hero{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 80px;
+}
+
+
+
+h1{
+    font-family: Mistral, sans-serif;
+    color: white;
+}
+
+.frame{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-img{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transform: scaleX(-1);
+}
+
+video{
+    max-width: 98%;
+}
+
+video::-webkit-media-controls-mute-button:hover,
+ video::-webkit-media-controls-play-button:hover,
+ video::-webkit-media-controls-fullscreen-button:hover
+{
+    background-color: #FF2020;
+    border-radius: 50%;
+}
+
+.description{
+    margin: 30px 0;
+}
+
+.history{
+    background-color: white;
+}
+
+.history .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0 250px;
+}
+
+.backtop, .backbottom{
+    width: 102%;
+    position: relative;
+    z-index: 1;
+}
+
+.backtop{
+    top: -10px;
+}
+
+.backbottom{
+    bottom: -10px;
+}
+
+h2{
+    font-family: Mistral, sans-serif;
+    color: black;
+    font-size: 6rem;
+    margin-bottom: 80px;
+}
+
+
+footer .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 150px;
+}
+
+footer .text{
+    margin: 0px 0 140px;
+}
+
+footer a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+footer a:hover{
+    color: #FF2020;
+}
+
+footer a:active{
+    color: #FF0000;
+}
+
+footer img{
+    margin-top: 70px;
+}
+
+
+/*-----------------------------------------------------------------*/
+@media (min-width: 360px) and  (max-width: 566.99px){ 
+    .hero{
+        max-width: 350px;
+    }
+    
+    .main{
+        margin-top: 180px;
+    }
+
+    .wrapper, .frame-img{
+        max-width: 335px;
+    }
+    
+    h1{
+        font-size: 4rem;
+    }
+
+    .frame{
+        margin-top: 50px;
+    }
+
+    .history .text{
+        max-width: 340px;
+        font-size: 24px;
+    }
+
+    .history .text br{
+        display: none;
+    }
+
+    .history .text br.v{
+        display: none;
+    }
+
+    footer .text{
+        max-width: 350px;
+        font-size: 0.8rem;
+    }
+
+    footer .text br{
+        display: none;
+    }
+}
+
+
+/*-----------------------------------------------------------------*/
+@media (min-width: 567px) { 
+    .hero{
+        max-width: 100%;
+    }
+
+    .main{
+        margin-top: 400px;
+    }
+
+    .wrapper, .frame-img{
+        max-width: 540px;
+    }
+    
+    h1{
+        font-size: 8rem;
+    }
+
+    .frame{
+        margin-top: 100px;
+    }
+
+    .history .text{
+        max-width: 100%;
+        font-size: 2rem;
+        max-width: 540px;
+    }
+
+    .history .text br{
+        display: none;
+    }
+
+    footer .text{
+        max-width: 440px;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    footer .text br{
+        display: none;
+    }
+}
+
+
+/*-----------------------------------------------------------------*/
+@media (min-width: 992px) {
+    .wrapper, .frame-img{
+        max-width: 910px;
+    }
+
+    h1{
+        font-size: 16rem;
+    }
+
+    .frame{
+        margin-top: 150px;
+    }
+
+    .history .text{
+        max-width: 540px;
+    }
+    
+    .history .text br{
+        display: none;
+    }
+
+    footer .text{
+        max-width: 700px;
+        text-align: center;
+    }
+
+    footer .text br{
+        display: none;
+    }
+
+    footer .text br.na{
+        display: inline;
+    }
+}
+    
+
+
+
+/*-----------------------------------------------------------------*/
+@media (min-width: 1200px) { 
+    .wrapper, .frame-img{
+        max-width: 1120px;
+    }
+    
+    .history .text{
+        max-width: 800px;
+    }
+
+    footer .text br{
+        display: none;
+    }
+
+    .history .text br.v{
+        display: inline;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
